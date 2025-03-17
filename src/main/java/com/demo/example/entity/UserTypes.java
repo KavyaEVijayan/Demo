@@ -11,22 +11,16 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "users")
-public class User {
+@Table(name = "user_types")
+public class UserTypes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private Long id;
+    private String type;
     @Column
-    private String name;
-    @Column
-    private String email;
+    private Long discountPercentage;
 
-//    public void setId(Long id) {
-//        this.id = id;
-//    }
-//
-//    public Long getId() {
-//        return id;
-//    }
+
+
+
 }
